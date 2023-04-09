@@ -1552,6 +1552,8 @@ body > .navbar-collapse[data-color=purple]:after {
   min-height: 50px;
   background-color: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .navbar .navbar-brand {
   font-weight: 400;
@@ -1635,7 +1637,7 @@ body > .navbar-collapse[data-color=purple]:after {
 }
 .navbar .navbar-nav .notification {
   position: absolute;
-  background-color: #FB404B;
+  background-color: #fb404b;
   text-align: center;
   border-radius: 10px;
   min-width: 18px;
@@ -1678,18 +1680,22 @@ body > .navbar-collapse[data-color=purple]:after {
   margin-top: 10px;
 }
 
-.navbar-transparent .navbar-brand, [class*=navbar-ct] .navbar-brand {
+.navbar-transparent .navbar-brand,
+[class*=navbar-ct] .navbar-brand {
   color: #FFFFFF;
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
-.navbar-transparent .navbar-brand:focus, .navbar-transparent .navbar-brand:hover, [class*=navbar-ct] .navbar-brand:focus, [class*=navbar-ct] .navbar-brand:hover {
+.navbar-transparent .navbar-brand:focus, .navbar-transparent .navbar-brand:hover,
+[class*=navbar-ct] .navbar-brand:focus,
+[class*=navbar-ct] .navbar-brand:hover {
   background-color: transparent;
   opacity: 1;
   filter: alpha(opacity=100);
   color: #FFFFFF;
 }
-.navbar-transparent .navbar-nav .nav-item .nav-link:not(.btn), [class*=navbar-ct] .navbar-nav .nav-item .nav-link:not(.btn) {
+.navbar-transparent .navbar-nav .nav-item .nav-link:not(.btn),
+[class*=navbar-ct] .navbar-nav .nav-item .nav-link:not(.btn) {
   color: #FFFFFF;
   border-color: #FFFFFF;
   opacity: 0.8;
@@ -1700,7 +1706,8 @@ body > .navbar-collapse[data-color=purple]:after {
 .navbar-transparent .navbar-nav .active .nav-link:focus:not(.btn),
 .navbar-transparent .navbar-nav .nav-item .nav-link:not(.btn),
 .navbar-transparent .navbar-nav .nav-item .nav-link:hover:not(.btn),
-.navbar-transparent .navbar-nav .nav-item .nav-link:focus:not(.btn), [class*=navbar-ct] .navbar-nav .active .nav-link:not(.btn),
+.navbar-transparent .navbar-nav .nav-item .nav-link:focus:not(.btn),
+[class*=navbar-ct] .navbar-nav .active .nav-link:not(.btn),
 [class*=navbar-ct] .navbar-nav .active .nav-link:hover:not(.btn),
 [class*=navbar-ct] .navbar-nav .active .nav-link:focus:not(.btn),
 [class*=navbar-ct] .navbar-nav .nav-item .nav-link:not(.btn),
@@ -1712,12 +1719,14 @@ body > .navbar-collapse[data-color=purple]:after {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-.navbar-transparent .navbar-nav .nav .nav-item .nav-link.btn:hover, [class*=navbar-ct] .navbar-nav .nav .nav-item .nav-link.btn:hover {
+.navbar-transparent .navbar-nav .nav .nav-item .nav-link.btn:hover,
+[class*=navbar-ct] .navbar-nav .nav .nav-item .nav-link.btn:hover {
   background-color: transparent;
 }
 .navbar-transparent .navbar-nav .show .nav-link,
 .navbar-transparent .navbar-nav .show .nav-link:hover,
-.navbar-transparent .navbar-nav .show .nav-link:focus, [class*=navbar-ct] .navbar-nav .show .nav-link,
+.navbar-transparent .navbar-nav .show .nav-link:focus,
+[class*=navbar-ct] .navbar-nav .show .nav-link,
 [class*=navbar-ct] .navbar-nav .show .nav-link:hover,
 [class*=navbar-ct] .navbar-nav .show .nav-link:focus {
   background-color: transparent;
@@ -1725,11 +1734,13 @@ body > .navbar-collapse[data-color=purple]:after {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-.navbar-transparent .btn-default, [class*=navbar-ct] .btn-default {
+.navbar-transparent .btn-default,
+[class*=navbar-ct] .btn-default {
   color: #FFFFFF;
   border-color: #FFFFFF;
 }
-.navbar-transparent .btn-default.btn-fill, [class*=navbar-ct] .btn-default.btn-fill {
+.navbar-transparent .btn-default.btn-fill,
+[class*=navbar-ct] .btn-default.btn-fill {
   color: #9A9A9A;
   background-color: #FFFFFF;
   opacity: 0.9;
@@ -1739,7 +1750,8 @@ body > .navbar-collapse[data-color=purple]:after {
 .navbar-transparent .btn-default.btn-fill:focus,
 .navbar-transparent .btn-default.btn-fill:active,
 .navbar-transparent .btn-default.btn-fill.active,
-.navbar-transparent .show .dropdown-toggle.btn-fill.btn-default, [class*=navbar-ct] .btn-default.btn-fill:hover,
+.navbar-transparent .show .dropdown-toggle.btn-fill.btn-default,
+[class*=navbar-ct] .btn-default.btn-fill:hover,
 [class*=navbar-ct] .btn-default.btn-fill:focus,
 [class*=navbar-ct] .btn-default.btn-fill:active,
 [class*=navbar-ct] .btn-default.btn-fill.active,
@@ -1777,7 +1789,8 @@ body > .navbar-collapse[data-color=purple]:after {
   background-color: transparent;
   color: #1DC7EA;
 }
-.navbar-default .navbar-nav .navbar-toggle:hover, .navbar-default .navbar-nav .navbar-toggle:focus {
+.navbar-default .navbar-nav .navbar-toggle:hover,
+.navbar-default .navbar-nav .navbar-toggle:focus {
   background-color: transparent;
 }
 .navbar-default:not(.navbar-transparent) .btn-default:hover {
@@ -3989,8 +4002,8 @@ License - nucleoapp.com/license/
 -------------------------------- */
 @font-face {
   font-family: "nucleo-icons";
-  src: url("~assets/fonts/nucleo-icons.eot");
-  src: url("~assets/fonts/nucleo-icons.eot") format("embedded-opentype"), url("~assets/fonts/nucleo-icons.woff2") format("woff2"), url("~assets/fonts/nucleo-icons.woff") format("woff"), url("~assets/fonts/nucleo-icons.ttf") format("truetype"), url("~assets/fonts/nucleo-icons.svg") format("svg");
+  src: url("../fonts/nucleo-icons.eot");
+  src: url("../fonts/nucleo-icons.eot") format("embedded-opentype"), url("../fonts/nucleo-icons.woff2") format("woff2"), url("../fonts/nucleo-icons.woff") format("woff"), url("../fonts/nucleo-icons.ttf") format("truetype"), url("../fonts/nucleo-icons.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }

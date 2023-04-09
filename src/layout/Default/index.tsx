@@ -5,6 +5,7 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { useLocation } from "react-router";
 import sidebarImage from "../../assets/img/sidebar-1.jpg";
+import { Outlet } from "react-router-dom";
 
 export function Default() {
   const [image, setImage] = useState(sidebarImage);
@@ -41,7 +42,7 @@ export function Default() {
         <div className="main-panel" ref={mainPanel}>
           <Header />
           <div className="content">
-            {/*<Switch>{getRoutes(routes)}</Switch>*/}
+            <Outlet />
           </div>
           <Footer />
         </div>
