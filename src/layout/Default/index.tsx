@@ -41,7 +41,7 @@ export function Default() {
         <SideBar color={color} image={hasImage ? image : ""} routes={[]} />
         <div className="main-panel" ref={mainPanel}>
           <Header />
-          <div className="content">
+          <div className="content " >
             <Outlet />
           </div>
           <Footer />
